@@ -9,7 +9,7 @@
 	
 	<target name="init">
 		<mkdir dir="build/classes"/>
-		<mkdir dir="dist" />
+		<mkdir dir="dist1" />
 	</target>
 	
 	<target name="compile" depends="init" >
@@ -19,7 +19,7 @@
 	</target>
 	
 	<target name="war" depends="compile">
-		<war destfile="dist/AntExample.war" webxml="WebContent/WEB-INF/web.xml">
+		<war destfile="dist1/AntExample.war" webxml="WebContent/WEB-INF/web.xml">
 			<fileset dir="WebContent"/>
 			<lib dir="WebContent/WEB-INF/lib"/>
 			<classes dir="build/classes"/>
